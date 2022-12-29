@@ -1,2 +1,2 @@
-# soil-tester
-Contains test scripts for Meter and VH400 soil moisture sensors.
+# Data Gator Analog Sensor Debugger
+Build and upload this project to a Data Gator 1.5 to see the voltages and readings from the ADC. 
