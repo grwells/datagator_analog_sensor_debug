@@ -1,5 +1,6 @@
 #include <Arduino.h>
 #include <Wire.h>
+#include <WiFi.h>
 #include <OWMAdafruit_ADS1015.h>
 #include <74HC40520.h>
 #include <VH400.h>
@@ -47,10 +48,7 @@ void loop(){
   bool pwr_en = true;
 
   digitalWrite(D3, pwr_en);
-  Serial.printf("PWR_EN = %i\n", pwr_en);
-  Serial.println("reading sensors...");
-  delay(4000);
-
+  Serial.printf("MAC Address: %s\n", WiFi.macAddress().c_str());
   Serial.println("========================================");
 
   mux.select(0);
